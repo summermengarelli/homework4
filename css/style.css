@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    animation: fadein 3s;
+}
+
+@media (prefers-reduced-motion) {
+    fadein {
+        animation: none;
+    }
+}
+
+
+.nav_links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.nav_item {
+    width: 100%;
+}
+
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+
+@media all and (min-width: 700px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 400px;
+        align-self: flex-start;
+    }
+
+    .nav_links {
+        flex-direction: row;
+    }
+
+    .nav_item {
+        width: auto;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .gallery img {
+        width: 300px;
+    }
+
+}
